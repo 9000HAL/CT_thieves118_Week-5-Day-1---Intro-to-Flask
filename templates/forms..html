@@ -1,0 +1,18 @@
+{% extends base.html %}
+
+
+    {% block content %}
+
+
+
+
+
+{% for student in students_list %}
+    {% if student == 'Will'%}
+            <h2>{{student}}</h2>
+        {% else %}
+        <li>>{{student}}</li>
+        {% endif% }
+            
+
+        {% endblock %}

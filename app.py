@@ -26,9 +26,6 @@ def username(username):
 
 
 
-
-
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     return render_template('forms.html')

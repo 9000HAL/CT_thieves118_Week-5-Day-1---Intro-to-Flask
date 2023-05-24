@@ -6,10 +6,22 @@ import requests
 from app import app
 
 
+from forms import LoginForm
+
+from app.forms imprt LoginForm
+
+
+
+
 
 
 
 app = Flask(__name__)
+
+
+
+
+
 
 @app.route("/")
 def hello_world():

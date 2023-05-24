@@ -3,4 +3,6 @@ from wtforms import EmailField, PasswordField, SubmitField
 from wtforms.validators import DataRequired
 
 class LoginForm(FlaskForm):
-    pass
+    email = EmailField(Email', validators=[DataRequired()])
+    password = PasswordField('Password', [DataRequired()])
+    submit_btn = SubmitField('Login')

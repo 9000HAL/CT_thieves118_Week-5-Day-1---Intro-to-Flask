@@ -23,6 +23,10 @@ app = Flask(__name__)
 
 
 
+}
+
+
+
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
@@ -39,6 +43,12 @@ def home():
 def username(username):
     # show the user profile for that user
     return f'Hello {username}!'
+
+
+
+REGISTERED_USERS = { #see pic
+
+#revise below see pics
 
 
 

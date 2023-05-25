@@ -8,7 +8,7 @@ from app import app
 
 from forms import LoginForm
 
-from app.forms imprt LoginForm
+from app.forms import LoginForm
 
 
 
@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 
 
-}
+
 
 
 
@@ -48,7 +48,8 @@ def username(username):
 
 REGISTERED_USERS = { #see pic
 
-#revise below see pics
+#revise below see pics 
+ }
 
 
 
@@ -73,7 +74,7 @@ def login():
 
 @app.route('/students/')
 def students():
-    students_list = ['Gabe, 'Will']
+    students_list = ['Gabe', 'Will']
     return render_template('students.html', students_list=students_list)
 
 
@@ -88,8 +89,13 @@ def students():
 
 
 
-@app.route('/ergast', #see pic
+@app.route('/ergast'), #see pic
 
 
 
 
+wed: notes----------
+
+@app.route('signup') see PendingDeprecationWarning
+class SignUpForm(FlaskForm):
+    
